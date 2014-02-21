@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>073A2913-04BD-48A5-8F03-14B82F1AE544</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AccountSwitcher</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EB621003-C5AA-43DA-B980-BDB472BE675F</key>
+		<string>ssh://github.com/jonahgrant/AccountSwitcher.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AccountSwitcher.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EB621003-C5AA-43DA-B980-BDB472BE675F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/jonahgrant/AccountSwitcher.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EB621003-C5AA-43DA-B980-BDB472BE675F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EB621003-C5AA-43DA-B980-BDB472BE675F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AccountSwitcher</string>
+		</dict>
+	</array>
+</dict>
+</plist>

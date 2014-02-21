@@ -17,6 +17,8 @@
 @property (strong, nonatomic) UIImage *baseImage;
 @property (strong, nonatomic) UIScrollView *scrollView;
 @property (strong, nonatomic) NSMutableArray *blurredImages;
+@property (nonatomic, readwrite) BOOL shouldSwitch;
+@property (strong, nonatomic) UIView *dimmerView;
 
 @end
 
@@ -24,12 +26,19 @@
 
 - (instancetype)initWithScrollView:(UIScrollView *)scrollView profileImage:(UIImage *)profileImage {
     if (self = [super initWithFrame:CGRectMake(0, 0, 320, 150)]) {
-        _baseImage = [UIImage imageNamed:@"cover"];
+        _baseImage = [UIImage imageNamed:@"bg"];
+        
+        _shouldSwitch = NO;
         
         _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
         _imageView.image = _baseImage;
         [self addSubview:_imageView];
         
+        _dimmerView = [[UIView alloc] initWithFrame:_imageView.frame];
+        _dimmerView.backgroundColor = [UIColor blackColor];
+        _dimmerView.alpha = 0;
+        [self addSubview:_dimmerView];
+
         _profileImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 75, 75)];
         _profileImageView.image = profileImage;
         _profileImageView.center = _imageView.center;
@@ -62,33 +71,43 @@
 }
 
 - (void)updateImageFrame {
-    if (-180 >= _scrollView.contentOffset.y) {
-        NSLog(@"Do it dude.");
-    }
+    // this will control the "switch" action
+   /* if (-180 >= _scrollView.contentOffset.y && !_shouldSwitch) {
+        _shouldSwitch = YES;
+    } else if (-180 <= _scrollView.contentOffset.y && _shouldSwitch) {
+        _shouldSwitch = NO;
+    }*/
     
-    CGFloat offset = - _scrollView.contentOffset.y - 64;
-
-    if (0 > -offset) {
-        _imageView.frame = CGRectMake(-offset, -offset, 320 + offset * 2, CGRectGetHeight(self.frame) + offset);
-
-        _profileImageView.center = _imageView.center;
-
-        NSInteger index = offset / 10;
-       
-        if (index < 0) {
-            index = 0;
-        } else if (index >= _blurredImages.count) {
-            index = _blurredImages.count - 1;
-        }
+    if (!_shouldSwitch) {
+        CGFloat offset = - _scrollView.contentOffset.y - 64;
         
-        UIImage *image = _blurredImages[index];
-      
-        if (_baseImage != image) {
-            [_imageView setImage:image];
-        }
+        if (0 > -offset) {
+            CGRect newFrame = CGRectMake(-offset, -offset, 320 + offset * 2, CGRectGetHeight(self.frame) + offset);
+            
+            _imageView.frame = newFrame;
+            
+            _profileImageView.center = _imageView.center;
+            
+            _dimmerView.frame = newFrame;
+            _dimmerView.alpha = offset / 300.0;
 
-    } else {
-        [_imageView setImage:_blurredImages[0]];
+            NSInteger index = offset / 10;
+            
+            if (index < 0) {
+                index = 0;
+            } else if (index >= _blurredImages.count) {
+                index = _blurredImages.count - 1;
+            }
+            
+            UIImage *image = _blurredImages[index];
+            
+            if (_baseImage != image) {
+                [_imageView setImage:image];
+            }
+            
+        } else if (_shouldSwitch) {
+            [_imageView setImage:_blurredImages.lastObject];
+        }
     }
 }
 
@@ -117,7 +136,7 @@
     inBuffer.height = CGImageGetHeight(img);
     inBuffer.rowBytes = CGImageGetBytesPerRow(img);
     
-    inBuffer.data = (void*)CFDataGetBytePtr(inBitmapData);
+    inBuffer.data = (void *)CFDataGetBytePtr(inBitmapData);
     
     pixelBuffer = malloc(CGImageGetBytesPerRow(img) * CGImageGetHeight(img));
     

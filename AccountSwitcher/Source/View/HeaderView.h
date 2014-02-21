@@ -10,6 +10,8 @@
 
 @interface HeaderView : UIView
 
+@property (nonatomic, readonly) BOOL shouldSwitch;
+
 - (instancetype)initWithScrollView:(UIScrollView *)scrollView profileImage:(UIImage *)profileImage;
 
 @end

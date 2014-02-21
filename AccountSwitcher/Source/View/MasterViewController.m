@@ -11,6 +11,9 @@
 
 @interface MasterViewController ()
 
+@property (strong, nonatomic) HeaderView *headerView;
+@property (nonatomic) BOOL isSwitchingAccounts;
+
 @end
 
 @implementation MasterViewController
@@ -21,11 +24,11 @@
     
     self.title = @"Me";
     
-    HeaderView *headerView = [[HeaderView alloc] initWithScrollView:self.tableView
-                                                       profileImage:[UIImage imageNamed:@"profileImage"]];
+    _headerView = [[HeaderView alloc] initWithScrollView:self.tableView
+                                            profileImage:[UIImage imageNamed:@"profileImage"]];
     
-    [self.tableView addSubview:headerView];
-    [self.tableView setTableHeaderView:[[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(headerView.frame), CGRectGetHeight(headerView.frame))]];
+    [self.view addSubview:_headerView];
+    [self.tableView setTableHeaderView:[[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(_headerView.frame), CGRectGetHeight(_headerView.frame))]];
 }
 
 - (void)setInterface {
@@ -33,10 +36,33 @@
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack; // this sets the navigation and status bar's text to white
 }
 
+- (void)switchAccountsWithState:(BOOL)openOrClosed {
+    if (openOrClosed) {
+        _isSwitchingAccounts = YES;
+        [self.tableView reloadData];
+        
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+        
+        [_headerView setFrame:CGRectMake(0, 0, 320, 400)];
+        [self.view addSubview:_headerView];
+    } else {
+        _isSwitchingAccounts = NO;
+        [self.tableView reloadData];
+    }
+}
+
+#pragma mark - UIScrollView
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if (_headerView.shouldSwitch) {
+        [self switchAccountsWithState:YES];
+    }
+}
+
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return _isSwitchingAccounts ? 0 : 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

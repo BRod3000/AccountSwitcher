@@ -10,11 +10,6 @@
 		AB3DF1E218AEE9340088E505 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DF1E118AEE9340088E505 /* Foundation.framework */; };
 		AB3DF1E418AEE9340088E505 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DF1E318AEE9340088E505 /* CoreGraphics.framework */; };
 		AB3DF1E618AEE9340088E505 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DF1E518AEE9340088E505 /* UIKit.framework */; };
-		AB3DF20418AEE9350088E505 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DF20318AEE9350088E505 /* XCTest.framework */; };
-		AB3DF20518AEE9350088E505 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DF1E118AEE9340088E505 /* Foundation.framework */; };
-		AB3DF20618AEE9350088E505 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3DF1E518AEE9340088E505 /* UIKit.framework */; };
-		AB3DF20E18AEE9350088E505 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB3DF20C18AEE9350088E505 /* InfoPlist.strings */; };
-		AB3DF21018AEE9350088E505 /* AccountSwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3DF20F18AEE9350088E505 /* AccountSwitcherTests.m */; };
 		AB3DF22F18AEE9A50088E505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3DF21B18AEE9A50088E505 /* Main.storyboard */; };
 		AB3DF23018AEE9A50088E505 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB3DF21D18AEE9A50088E505 /* InfoPlist.strings */; };
 		AB3DF23118AEE9A50088E505 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3DF21F18AEE9A50088E505 /* Images.xcassets */; };
@@ -22,30 +17,14 @@
 		AB3DF23318AEE9A50088E505 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3DF22618AEE9A50088E505 /* main.m */; };
 		AB3DF23518AEE9A50088E505 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3DF22C18AEE9A50088E505 /* MasterViewController.m */; };
 		AB3DF23818AEF4410088E505 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3DF23718AEF4410088E505 /* HeaderView.m */; };
-		AB3DF23B18AF03BA0088E505 /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3DF23918AF03BA0088E505 /* cover.png */; };
-		AB3DF23C18AF03BA0088E505 /* cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3DF23A18AF03BA0088E505 /* cover@2x.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AB3DF20718AEE9350088E505 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB3DF1D618AEE9340088E505 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB3DF1DD18AEE9340088E505;
-			remoteInfo = AccountSwitcher;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AB3DF1DE18AEE9340088E505 /* AccountSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3DF1E118AEE9340088E505 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB3DF1E318AEE9340088E505 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AB3DF1E518AEE9340088E505 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		AB3DF20218AEE9350088E505 /* AccountSwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountSwitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3DF20318AEE9350088E505 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AB3DF20B18AEE9350088E505 /* AccountSwitcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AccountSwitcherTests-Info.plist"; sourceTree = "<group>"; };
-		AB3DF20D18AEE9350088E505 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AB3DF20F18AEE9350088E505 /* AccountSwitcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountSwitcherTests.m; sourceTree = "<group>"; };
 		AB3DF21A18AEE9A50088E505 /* AccountSwitcher-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AccountSwitcher-Info.plist"; sourceTree = "<group>"; };
 		AB3DF21C18AEE9A50088E505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB3DF21E18AEE9A50088E505 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -58,8 +37,6 @@
 		AB3DF22C18AEE9A50088E505 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		AB3DF23618AEF4410088E505 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		AB3DF23718AEF4410088E505 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
-		AB3DF23918AF03BA0088E505 /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
-		AB3DF23A18AF03BA0088E505 /* cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,16 +50,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB3DF1FF18AEE9350088E505 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB3DF20418AEE9350088E505 /* XCTest.framework in Frameworks */,
-				AB3DF20618AEE9350088E505 /* UIKit.framework in Frameworks */,
-				AB3DF20518AEE9350088E505 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,7 +58,6 @@
 			children = (
 				AB3DF22018AEE9A50088E505 /* Source */,
 				AB3DF21918AEE9A50088E505 /* Resources */,
-				AB3DF20918AEE9350088E505 /* AccountSwitcherTests */,
 				AB3DF1E018AEE9340088E505 /* Frameworks */,
 				AB3DF1DF18AEE9340088E505 /* Products */,
 			);
@@ -101,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				AB3DF1DE18AEE9340088E505 /* AccountSwitcher.app */,
-				AB3DF20218AEE9350088E505 /* AccountSwitcherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,29 +82,9 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AB3DF20918AEE9350088E505 /* AccountSwitcherTests */ = {
-			isa = PBXGroup;
-			children = (
-				AB3DF20F18AEE9350088E505 /* AccountSwitcherTests.m */,
-				AB3DF20A18AEE9350088E505 /* Supporting Files */,
-			);
-			path = AccountSwitcherTests;
-			sourceTree = "<group>";
-		};
-		AB3DF20A18AEE9350088E505 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AB3DF20B18AEE9350088E505 /* AccountSwitcherTests-Info.plist */,
-				AB3DF20C18AEE9350088E505 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		AB3DF21918AEE9A50088E505 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AB3DF23918AF03BA0088E505 /* cover.png */,
-				AB3DF23A18AF03BA0088E505 /* cover@2x.png */,
 				AB3DF21A18AEE9A50088E505 /* AccountSwitcher-Info.plist */,
 				AB3DF21B18AEE9A50088E505 /* Main.storyboard */,
 				AB3DF21D18AEE9A50088E505 /* InfoPlist.strings */,
@@ -225,24 +170,6 @@
 			productReference = AB3DF1DE18AEE9340088E505 /* AccountSwitcher.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AB3DF20118AEE9350088E505 /* AccountSwitcherTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB3DF21618AEE9350088E505 /* Build configuration list for PBXNativeTarget "AccountSwitcherTests" */;
-			buildPhases = (
-				AB3DF1FE18AEE9350088E505 /* Sources */,
-				AB3DF1FF18AEE9350088E505 /* Frameworks */,
-				AB3DF20018AEE9350088E505 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB3DF20818AEE9350088E505 /* PBXTargetDependency */,
-			);
-			name = AccountSwitcherTests;
-			productName = AccountSwitcherTests;
-			productReference = AB3DF20218AEE9350088E505 /* AccountSwitcherTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,11 +178,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jonah Grant";
-				TargetAttributes = {
-					AB3DF20118AEE9350088E505 = {
-						TestTargetID = AB3DF1DD18AEE9340088E505;
-					};
-				};
 			};
 			buildConfigurationList = AB3DF1D918AEE9340088E505 /* Build configuration list for PBXProject "AccountSwitcher" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -271,7 +193,6 @@
 			projectRoot = "";
 			targets = (
 				AB3DF1DD18AEE9340088E505 /* AccountSwitcher */,
-				AB3DF20118AEE9350088E505 /* AccountSwitcherTests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,19 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB3DF23C18AF03BA0088E505 /* cover@2x.png in Resources */,
 				AB3DF23118AEE9A50088E505 /* Images.xcassets in Resources */,
 				AB3DF23018AEE9A50088E505 /* InfoPlist.strings in Resources */,
 				AB3DF22F18AEE9A50088E505 /* Main.storyboard in Resources */,
-				AB3DF23B18AF03BA0088E505 /* cover.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB3DF20018AEE9350088E505 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB3DF20E18AEE9350088E505 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,33 +222,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB3DF1FE18AEE9350088E505 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB3DF21018AEE9350088E505 /* AccountSwitcherTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		AB3DF20818AEE9350088E505 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB3DF1DD18AEE9340088E505 /* AccountSwitcher */;
-			targetProxy = AB3DF20718AEE9350088E505 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		AB3DF20C18AEE9350088E505 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB3DF20D18AEE9350088E505 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		AB3DF21B18AEE9A50088E505 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -455,48 +342,6 @@
 			};
 			name = Release;
 		};
-		AB3DF21718AEE9350088E505 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AccountSwitcher.app/AccountSwitcher";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AccountSwitcher/AccountSwitcher-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AccountSwitcherTests/AccountSwitcherTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		AB3DF21818AEE9350088E505 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AccountSwitcher.app/AccountSwitcher";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AccountSwitcher/AccountSwitcher-Prefix.pch";
-				INFOPLIST_FILE = "AccountSwitcherTests/AccountSwitcherTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -514,15 +359,6 @@
 			buildConfigurations = (
 				AB3DF21418AEE9350088E505 /* Debug */,
 				AB3DF21518AEE9350088E505 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB3DF21618AEE9350088E505 /* Build configuration list for PBXNativeTarget "AccountSwitcherTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB3DF21718AEE9350088E505 /* Debug */,
-				AB3DF21818AEE9350088E505 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
